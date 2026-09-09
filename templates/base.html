@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    
+    <!-- header>nav>ul>li>a -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'inicio:index' %}">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; Django Project Templates 2026</p>
+    </footer>
 </body>
 </html>
+
+
+
+https://github.com/larriag13/django_templates_n4p2c1.git
